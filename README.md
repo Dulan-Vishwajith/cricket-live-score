@@ -1,67 +1,122 @@
-# Cricket Scoring Web Application
+# 🏏 Cricket Scoring Web Application
 
-This project is a simple **Cricket Scoring Web Application** developed using **PHP and MySQL**.  
-You can run and develop this project locally using **XAMPP**.
-
----
-
-## 🔧 Requirements
-
-Before starting, make sure you have:
-
-- ✅ Git installed
-- ✅ XAMPP installed
-- ✅ Web browser (Chrome, Edge, etc.)
-- ✅ Basic knowledge of PHP & MySQL
-
-Download XAMPP: https://www.apachefriends.org/
+This project is a **Cricket Scoring Web Application** developed using **PHP and MySQL**.
+You can run, test, and develop this project locally using **XAMPP** and manage versions using **Git & GitHub**.
 
 ---
 
-## 📥 Step 1 – Clone the Repository
+## ✅ Requirements
 
-Open **Git Bash** or **Terminal** and run:
+Install these before starting:
 
+- Git – https://git-scm.com/
+- XAMPP – https://www.apachefriends.org/
+- Web Browser – Chrome / Edge / Firefox
 
+---
+
+## 📌 STEP 1 — Clone the Repository
+
+Open **Git Bash / Terminal / Command Prompt** and run:
+
+```bash
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+```
 
-▶️ Step 2 – Start XAMPP Server
+After cloning, move the project folder to your XAMPP htdocs directory:
 
-Open XAMPP Control Panel and start:
+```text
+C:\xampp\htdocs\
+```
 
-✅ Apache
+Final path:
 
-✅ MySQL
+```text
+C:\xampp\htdocs\YOUR-REPOSITORY-NAME
+```
 
-Make sure both are running (green).
-🗄️ Step 3 – Create Database
+---
+
+## 📌 STEP 2 — Start XAMPP
+
+1. Open **XAMPP Control Panel**
+2. Click **Start** on:
+   - Apache
+   - MySQL
+3. Make sure both show **Running (green)**
+
+---
+
+## 📌 STEP 3 — Create the Database
 
 Open your browser and go to:
 
+```text
 http://localhost/phpmyadmin
+```
 
+Then:
 
-Click New and create a database named:
+1. Click **New**
+2. Enter database name: `cricket`
+3. Click **Create**
 
-cricket
+(Optional) If your project has a `.sql` file:
 
+1. Select the `cricket` database
+2. Click **Import**
+3. Choose the `.sql` file
+4. Click **Go**
 
-Import the SQL file (if provided in the repository):
+---
 
-Select your database
+## 📌 STEP 4 — Configure Database Connection (XAMPP)
 
-Click Import
+Open your `db.php` file and add:
 
-Choose the .sql file
+```php
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "cricket";
 
-Click Go
-🔑 Step 4 – Database Connection (XAMPP)
-Step 5 – Run the Website
+$conn = new mysqli($host, $user, $pass, $db);
 
-In your browser, open:
+if ($conn->connect_error) {
+    die("Connection Failed: " . $conn->connect_error);
+}
+?>
+```
 
+Save the file.
+
+---
+
+## 📌 STEP 5 — Run the Website
+
+Open your browser and go to:
+
+```text
 http://localhost/YOUR-REPOSITORY-NAME/
+```
 
+Your website should now be running locally. 🎉
 
-Your website should now be running locally 🎉
+---
+
+## 📌 STEP 6 — Save Changes to GitHub
+
+Whenever you update your project, run:
+
 ```bash
+git add .
+git commit -m "Your update message"
+git push
+```
+
+---
+
+## 👨‍💻 Author
+
+Dulan Vishwajith
