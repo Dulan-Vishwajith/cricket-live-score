@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body{
+    margin:0;
+    padding:20px;
+    background:#0f172a;
+    color:#e2e8f0;
+    font-family: 'Inter', Arial, sans-serif;
+    text-align:center;
+}
+
+h1, h2, h3{
+    margin-bottom:10px;
+}
+
+/* SCOREBOARD */
+.scoreboard{
+    margin:30px auto;
+    width:90%;
+    max-width:800px;
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+    border:1px solid #334155;
+    border-radius:15px;
+    padding:20px;
+    background:#1e293b;
+}
+
+.team{
+    width:45%;
+    padding:15px;
+    border-radius:10px;
+    background:#0f172a;
+    border:1px solid #475569;
+}
+
+.score{
+    font-size:26px;
+    font-weight:bold;
+}
+
+.overs{
+    font-size:14px;
+    opacity:0.8;
+}
+
+.now-playing{
+    margin:20px auto;
+    padding:15px;
+    max-width:400px;
+    border-radius:12px;
+    border:1px solid #334155;
+    background:#1e293b;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse: collapse;
+    background:#1e293b;
+}
+
+th, td{
+    border:1px solid #334155;
+    padding:8px;
+    text-align:center;
+}
+
+th{
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+tr:nth-child(even){
+    background:#1e2533;
+}
+/* FOOTER STYLE */
+.site-footer{
+    margin-top:40px;
+    padding:15px 10px;
+    text-align:center;
+    border-top:1px solid #334155;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.site-footer p{
+    margin:3px 0;
+}
+.site-footer {
+    background: rgba(15,23,42,0.6);
+    backdrop-filter: blur(5px);
+}

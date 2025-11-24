@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Send root domain to user page
+RewriteRule ^$ /user/index.php [L]
+
+# Also block direct folder listing
+Options -Indexes

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.panel {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.buttons {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+button {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    padding: 10px 16px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #334155;
+}
+
+button.danger {
+    border-color: #dc2626;
+    color: #fecaca;
+}
+
+button.danger:hover {
+    background: #7f1d1d;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #1e293b;
+}
+
+th, td {
+    border: 1px solid #334155;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #0f172a;
+}
+
+/* FOOTER STYLE */
+.site-footer{
+    margin-top:40px;
+    padding:15px 10px;
+    text-align:center;
+    border-top:1px solid #334155;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.site-footer p{
+    margin:3px 0;
+}
+.site-footer {
+    background: rgba(15,23,42,0.6);
+    backdrop-filter: blur(5px);
+}
+.center-horizontal {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center (optional) */
+    margin: 15px 0;
+}
+
