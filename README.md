@@ -118,7 +118,7 @@ git push
 ---
 
 ---
-##Database
+## 📌 STEP 7 - Database
 create database called "cricket"->paste this sql part in sql tab
 ```SQL
 
